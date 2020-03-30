@@ -1,0 +1,64 @@
+<view class="c-minheight wx-view_1VyBwp">
+    <view class="c-minheight wx-view_Fu5zom">
+        <view bindtap="active" class="c-minheight wx-view_DDhVi4 {{active?'active':''}}" data-id="0">
+            <text class="c-block wx-text_Mujjpo">租房</text>
+        </view>
+        <view bindtap="active" class="c-minheight wx-view_DDhVi4 {{active?'':'active'}}" data-id="1">
+            <text class="c-block wx-text_Mujjpo">买房</text>
+        </view>
+    </view>
+    <block wx:for="{{rents}}">
+        <view class="listitem01 {{active?'':'as'}}" wx:if="{{item.rental==0}}">
+            <view catchtap="tap_a42eae22" class="c-minheight bottomGrayboder wx-view_pOFBSt" data-rent_id="{{item.fangyuan_id}}">
+                <navigator class="listitem-navigator" hoverClass="navigator-hover">
+                    <image class="wx-image_tBcdCT2" mode="aspectFill" src="{{item.icon}}"></image>
+                    <view class="wx-view_cPj0ok2">
+                        <view class="c-minheight wx-view_gmUz5O">
+                            <text class="c-block c-ellipse wx-text_TvHPc92">{{item.fang_name}}</text>
+                        </view>
+                        <view class="c-minheight wx-view_qSNbVJ">
+                            <text class="c-block wx-text_dFoG8W">{{item.fang_name}}</text>
+                            <text class="c-block wx-text_BM3ABC">{{item.district}}</text>
+                        </view>
+                        <view class="c-minheight wx-view_eSPd6T">
+                            <view class="c-minheight wx-view_ehjyjk">
+                                <text class="c-block wx-text_UdF2my">{{item.huxing}}</text>
+                                <text class="c-block wx-text_rg3ugt">{{item.size}}㎡</text>
+                            </view>
+                            <view class="c-minheight wx-view_8bRi3G">
+                                <text class="c-block wx-text_q7eeg3">{{item.price}}</text>
+                                <text class="c-block wx-text_HQhFyQ">元/月</text>
+                            </view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="listitem01 {{active?'as':''}}" wx:if="{{item.rental==1}}">
+            <view catchtap="tap_caac7aaf" class="c-minheight bottomGrayboder wx-view_pOFBSt" data-buy_id="{{item.fangyuan_id}}">
+                <navigator class="listitem-navigator" hoverClass="navigator-hover">
+                    <image class="wx-image_tBcdCT2" mode="aspectFill" src="{{item.icon}}"></image>
+                    <view class="wx-view_cPj0ok2">
+                        <view class="c-minheight wx-view_gmUz5O">
+                            <text class="c-block c-ellipse wx-text_TvHPc92">{{item.fang_name}}</text>
+                        </view>
+                        <view class="c-minheight wx-view_qSNbVJ">
+                            <text class="c-block wx-text_dFoG8W">{{item.fang_name}}</text>
+                            <text class="c-block wx-text_BM3ABC">{{item.district}}</text>
+                        </view>
+                        <view class="c-minheight wx-view_eSPd6T">
+                            <view class="c-minheight wx-view_ehjyjk">
+                                <text class="c-block wx-text_UdF2my">{{item.huxing}}</text>
+                                <text class="c-block wx-text_rg3ugt">{{item.size}}㎡</text>
+                            </view>
+                            <view class="c-minheight wx-view_8bRi3G">
+                                <text class="c-block wx-text_q7eeg3">{{item.total}}</text>
+                                <text class="c-block wx-text_HQhFyQ">万元</text>
+                            </view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </block>
+</view>
