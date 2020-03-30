@@ -1,0 +1,16 @@
+<view class="c-minheight wx-view_jL0vBm" wx:for="{{agent}}">
+    <view class="c-minheight wx-view_MefdU4">
+        <view catchtap="tap_1e109a3c" class="c-minheight wx-view_YXkq3r" data-agent_id="{{item.id}}">
+            <image class="wx-image_s9cE4m" mode="scaleToFill" src="{{item.icon}}"></image>
+            <view class="c-minheight wx-view_Tl9k2Z">
+                <text class="c-block wx-text_qHqITf">{{item.agent_name}}</text>
+                <text class="c-block wx-text_0eF4WQ">{{item.jianjei}}</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_5q11Dw"></view>
+        <view bindtap="call" class="c-minheight wx-view_0VBvwG" data-tel="{{item.tel}}">
+            <image class="wx-image_8dBknr" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/36653c82a76bb02e088d505a9d38a5a9_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/36653c82a76bb02e088d505a9d38a5a9_origin.jpg); "></image>
+            <text class="c-block wx-text_AJfizR">电话咨询</text>
+        </view>
+    </view>
+</view>
