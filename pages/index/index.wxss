@@ -1,0 +1,116 @@
+.body {
+    height: 100%;
+}
+
+.wx-view_ep0qEo {
+    min-height: 30%;
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wx-view_fQ1ukz {
+    width: 100%;
+    min-height: 60rpx;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wx-view_aVvVRQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60rpx;
+}
+
+.wx-view_R9rL6m {
+    display: flex;
+    min-height: 120rpx;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 40rpx;
+    margin-top: 40rpx;
+}
+
+.wx-view_diP436 {
+    width: 200rpx;
+    padding-right: 0px;
+    margin-right: 100rpx;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wx-view_gifN8C {
+    width: 200rpx;
+    padding-right: 0px;
+    margin-left: 100rpx;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wx-image_q86i1G {
+    width: 58rpx;
+    height: 60rpx;
+    margin-top: 20rpx;
+    margin-right: 20rpx;
+}
+
+.wx-image_0L296P {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.wx-text_3mGLvs {
+    font-size: 24rpx;
+    color: rgb(155,155,155);
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.wx-image_5Z0U9w {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.wx-text_dVWxur {
+    font-size: 24rpx;
+    color: rgb(155,155,155);
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.bj {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    height: 200rpx;
+    width: 260rpx;
+}
+
+.img {
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}

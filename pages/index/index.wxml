@@ -1,0 +1,90 @@
+<view class="body" style="background-image:url('{{bjt}}'); background-size:100% 100%;" wx:if="{{bjt!==''}}">
+    <view class="bj">
+        <view bindtap="buymap" class="img">
+            <image class="icon" src="/resources/lan.png"></image>
+        </view>
+        <view bindtap="rentmap" class="img">
+            <image class="icon" src="/resources/hong.png"></image>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_U8O7SJ">
+        <view class="wx-view_EeBckQ">
+            <button catchtap="tap_4039869c" class="wx-button_HJqV0C" hoverClass="button-hover" size="default" type="default">
+        我要买房
+      </button>
+            <button catchtap="tap_73f1ad69" class="wx-button_dkxo6X" hoverClass="button-hover" size="default" type="default">
+        我要租房
+      </button>
+            <button catchtap="tap_7979c18c" class="wx-button_4Z33io" hoverClass="button-hover" size="default" type="default">
+        求房留言
+      </button>
+        </view>
+        <view catchtap="fabu" class="c-minheight wx-view_jF6G4u">
+            <button class="wx-button_KKOuyw" hoverClass="button-hover" size="default" style="background-color: #ff7f00" type="default">
+        房东发布
+      </button>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_ep0qEo fabu" style="display:{{display}}">
+        <view class="c-minheight wx-view_fQ1ukz">
+            <view class="c-minheight wx-view_aVvVRQ">
+                <image catchtap="close" class="wx-image_q86i1G" mode="scaleToFill" src="http://qty83k.creatby.com/materials/117707/origin/8b9b2c8d1fdc1e49976f9f4a7491287a_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/117707/origin/8b9b2c8d1fdc1e49976f9f4a7491287a_origin.png); "></image>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_R9rL6m" style="margin:0 auto;margin-top:20px">
+            <view catchtap="chuzu" class="c-minheight wx-view_diP436">
+                <image class="wx-image_0L296P" mode="scaleToFill" src="/resources/zu.png"></image>
+                <text class="c-block wx-text_3mGLvs">出租发布</text>
+            </view>
+            <view catchtap="chushou" class="c-minheight wx-view_gifN8C">
+                <image class="wx-image_5Z0U9w" mode="scaleToFill" src="/resources/shou.png"></image>
+                <text class="c-block wx-text_dVWxur">出售发布</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="body" style="background-image:url('/resources/pNK3qnXQk7388b043cb6Y03JZ3nN0X.jpg');  background-size:100% 100%;" wx:if="{{bjt==''}}">
+    <view class="bj">
+        <view bindtap="buymap" class="img">
+            <image class="icon" src="/resources/lan.png"></image>
+        </view>
+        <view bindtap="rentmap" class="img">
+            <image class="icon" src="/resources/hong.png"></image>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_U8O7SJ">
+        <view class="wx-view_EeBckQ">
+            <button catchtap="tap_4039869c" class="wx-button_HJqV0C" hoverClass="button-hover" size="default" type="default">
+        我要买房
+      </button>
+            <button catchtap="tap_73f1ad69" class="wx-button_dkxo6X" hoverClass="button-hover" size="default" type="default">
+        我要租房
+      </button>
+            <button catchtap="tap_7979c18c" class="wx-button_4Z33io" hoverClass="button-hover" size="default" type="default">
+        求房留言
+      </button>
+        </view>
+        <view catchtap="fabu" class="c-minheight wx-view_jF6G4u">
+            <button class="wx-button_KKOuyw" hoverClass="button-hover" size="default" style="background-color: #ff7f00" type="default">
+        房东发布
+      </button>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_ep0qEo fabu" style="display:{{display}}">
+        <view class="c-minheight wx-view_fQ1ukz">
+            <view class="c-minheight wx-view_aVvVRQ">
+                <image catchtap="close" class="wx-image_q86i1G" mode="scaleToFill" src="http://qty83k.creatby.com/materials/117707/origin/8b9b2c8d1fdc1e49976f9f4a7491287a_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/117707/origin/8b9b2c8d1fdc1e49976f9f4a7491287a_origin.png); "></image>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_R9rL6m" style="margin:0 auto;margin-top:20px">
+            <view catchtap="chuzu" class="c-minheight wx-view_diP436">
+                <image class="wx-image_0L296P" mode="scaleToFill" src="/resources/zu.png"></image>
+                <text class="c-block wx-text_3mGLvs">出租发布</text>
+            </view>
+            <view catchtap="chushou" class="c-minheight wx-view_gifN8C">
+                <image class="wx-image_5Z0U9w" mode="scaleToFill" src="/resources/shou.png"></image>
+                <text class="c-block wx-text_dVWxur">出售发布</text>
+            </view>
+        </view>
+    </view>
+</view>
