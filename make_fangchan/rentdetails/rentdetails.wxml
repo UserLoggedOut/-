@@ -1,0 +1,167 @@
+<view class="c-minheight wx-view_OPekOg">
+    <view class="c-minheight wx-view_sUpogI">
+        <swiper autoplay="true" class="wx-swiper_bbQW9k" indicatorDots="True" lowerThreshold="50">
+            <bolck wx:for="{{item.aaa}}">
+                <swiper-item class="c-full wx-swiper-item_D9cURg">
+                    <image catchtap="chakanimg" class="wx-image_bUzseW" data-imgurl="{{item}}" mode="aspectFill" src="{{item}}"></image>
+                </swiper-item>
+            </bolck>
+        </swiper>
+    </view>
+    <cover-image bindtap="panorama" class="panorama center" data-panorama="{{item.panorama}}" src="/resources/gua.png" wx:if="{{item.panorama!=''}}"></cover-image>
+    <cover-image bindtap="home_img" class="home-img center" src="/resources/home.png"></cover-image>
+    <view class="c-minheight wx-view_nSbr1k rent-detail-price">
+        <view>
+            <text class="c-block wx-text_jQgMXU no-row">{{item.fang_name}}</text>
+            <text class="c-block wx-text_BlOyu8 no-row" space="nbsp">{{item.district}}       {{item.xiaoqu_name}}</text>
+            <view class="c-minheight wx-view_8bRi3G" wx:if="{{item.price!=0}}">
+                <text class="c-block wx-text_q7eeg3 no-row">{{item.price}}</text>
+                <text class="c-block wx-text_HQhFyQ no-row">元/月</text>
+            </view>
+            <view class="c-minheight wx-view_8bRi3G" wx:if="{{item.price==0}}">
+                <text class="c-block wx-text_q3eeg7 no-row">面议</text>
+                <text class="c-block wx-text_HQhFyQ no-row">元/月</text>
+            </view>
+        </view>
+        <view class="rent-detail-zhuanfa-box">
+            <button class="rent-detail-zhuanfa" hoverClass="hover-zhuanfa" openType="share">转发</button>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_teaqEv" wx:if="{{agent}}">
+        <navigator class="wx-navigator_rv4BGW" hoverClass="navigator-hover">
+            <image catchtap="tap_7736e14a" class="wx-image_tBcdCT" data-agent_id="{{agent.id}}" mode="aspectFill" src="{{agent.icon}}"></image>
+            <view class="wx-view_cPj0ok">
+                <text class="c-block wx-text_TvHPc9">{{agent.agent_name}}</text>
+                <view bindtap="call" class="c-minheight wx-view_CDfihr" data-tel="{{agent.tel}}">
+                    <image class="wx-image_FekvNG" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/36653c82a76bb02e088d505a9d38a5a9_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/36653c82a76bb02e088d505a9d38a5a9_origin.jpg); "></image>
+                    <text class="c-block wx-text_v6bGID">直通经纪人</text>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <view class="c-minheight wx-view_EtfFaf">
+        <view class="c-minheight wx-view_b8e57e">
+            <text class="c-block wx-text_gsbiQA no-row">房源信息</text>
+        </view>
+        <view class="c-minheight wx-view_c49wO6">
+            <view class="c-minheight wx-view_2XsPAn">
+                <text class="c-block wx-text_phNGgY no-row">面积:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.size}}㎡</text>
+            </view>
+            <view class="c-minheight wx-view_vBXsrX">
+                <text class="c-block wx-text_phNGgY no-row">租房类型:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.leibie}}</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_c49wO6">
+            <view class="c-minheight wx-view_2XsPAn">
+                <text class="c-block wx-text_phNGgY no-row" space="nbsp">厅   :</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.office}}</text>
+            </view>
+            <view class="c-minheight wx-view_vBXsrX">
+                <text class="c-block wx-text_phNGgY no-row">标签:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.label_name}}</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_c49wO6">
+            <view class="c-minheight wx-view_2XsPAn">
+                <text class="c-block wx-text_phNGgY no-row">户型:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.huxing}}</text>
+            </view>
+            <view class="c-minheight wx-view_vBXsrX">
+                <text class="c-block wx-text_phNGgY no-row">类型:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.leixing}}</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_c49wO6">
+            <view class="c-minheight wx-view_2XsPAn">
+                <text class="c-block wx-text_phNGgY no-row" space="nbsp">卫   :</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.guard}}</text>
+            </view>
+            <view class="c-minheight wx-view_vBXsrX">
+                <text class="c-block wx-text_phNGgY no-row">年代:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.years}}</text>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_c49wO6">
+            <view class="c-minheight wx-view_2XsPAn">
+                <text class="c-block wx-text_phNGgY no-row">楼层:</text>
+                <text class="c-block wx-text_CvNz2U no-row">{{item.floor}}</text>
+            </view>
+            <view class="c-minheight wx-view_vBXsrX">
+                <text class="c-block wx-text_phNGgY rows">编号:</text>
+                <text class="c-block wx-text_CvNz2U rows">{{item.id}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_m0Rop6">
+        <view class="c-minheight wx-view_b8e57e">
+            <text class="c-block wx-text_gsbiQA">房屋描述</text>
+        </view>
+        <text class="c-block wx-text_PlQvBo">{{item.describe}}</text>
+    </view>
+    <view class="c-minheight wx-view_m0Rop6" wx:if="{{item.video!==''}}">
+        <view class="c-minheight wx-view_b8e57e">
+            <text class="c-block wx-text_gsbiQA">房源视频</text>
+        </view>
+        <view class="c-minheight wx-view_Cg9232">
+            <video class="wx-video_2dsOGK" src="{{item.video}}"></video>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_xZh75C">
+        <view class="c-minheight wx-view_bcQzqd">
+            <text class="c-block wx-text_gsbiQA">周边配套设施</text>
+        </view>
+        <view class="map_container">
+            <map bindmarkertap="makertap" bindtap="marke" class="map" id="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="14" showLocation="true"></map>
+        </view>
+        <view class="marke">
+            <view bindtap="marke" class="box" data-item="公交">
+                <image class="icon" src="/resources/gongjiao.png"></image>
+                <text>公交</text>
+            </view>
+            <view bindtap="marke" class="box" data-item="地铁">
+                <image class="icon" src="/resources/ditie.png"></image>
+                <text>地铁</text>
+            </view>
+            <view bindtap="marke" class="box" data-item="学校">
+                <image class="icon" src="/resources/xuexiao.png"></image>
+                <text>学校</text>
+            </view>
+            <view bindtap="marke" class="box" data-item="医院">
+                <image class="icon" src="/resources/yiyuan.png"></image>
+                <text>医院</text>
+            </view>
+            <view bindtap="marke" class="box" data-item="银行">
+                <image class="icon" src="/resources/yinhang.png"></image>
+                <text>银行</text>
+            </view>
+        </view>
+    </view>
+    <view class="kong"></view>
+    <cover-view class="c-minheight wx-view_RDOSWY">
+        <cover-view class="c-minheight wx-view_1kJGkc">
+            <cover-view catchtap="tap_7736e14a" class="c-minheight wx-view_r21Qsk" data-agent_id="{{agent.id}}">
+                <cover-image class="wx-image_I2sXiA" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/d485a1d02a8a588876f6bf9a292f97af_origin.jpg" style="background-size:    100% 100%; background-position:    0% 0%; background-repeat:    no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/d485a1d02a8a588876f6bf9a292f97af_origin.jpg); "></cover-image>
+                <cover-view class="c-block wx-text_3sFcR0">Ta的房源</cover-view>
+            </cover-view>
+            <cover-view class="c-minheight wx-view_MXrpnB"></cover-view>
+            <cover-view catchtap="navigation" class="c-minheight wx-view_r21Qsk">
+                <cover-image class="wx-image_I2sXiA" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/a9da8164f95c40827e50e83a531775a4_origin.jpg" style="background-size:    100% 100%; background-position:    0% 0%; background-repeat:    no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/a9da8164f95c40827e50e83a531775a4_origin.jpg); "></cover-image>
+                <cover-view class="c-block wx-text_3sFcR0">地图导航</cover-view>
+            </cover-view>
+            <cover-view class="c-minheight wx-view_MXrpnB"></cover-view>
+            <cover-view class="c-minheight wx-view_r21Qsk">
+                <cover-image catchtap="tap_as36e16a" class="wx-image_I2sXiA" mode="scaleToFill" src="/resources/hx.jpg" wx:if="{{collected}}"></cover-image>
+                <cover-image catchtap="tap_as36e16a" class="wx-image_I2sXiA" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/d6d354624d82fdf53344c53af7dc2367_origin.jpg" wx:else></cover-image>
+                <cover-view class="c-block wx-text_3sFcR0">收藏房源</cover-view>
+            </cover-view>
+        </cover-view>
+        <cover-view bindtap="pay" class="c-minheight wx-view_56naFx" data-ftel="{{item.tel}}" wx:if="{{item.tel!==''}}">
+            <cover-view class="c-block wx-text_elmK7i">直通房东</cover-view>
+        </cover-view>
+        <cover-view class="c-minheight wx-view_56naFx" wx:if="{{item.tel==''}}">
+            <cover-view class="c-block wx-text_elmK7i">属于官方</cover-view>
+        </cover-view>
+    </cover-view>
+</view>

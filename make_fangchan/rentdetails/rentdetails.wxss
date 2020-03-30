@@ -1,0 +1,90 @@
+page {
+    background-color: rgba(240,240,240,1);
+}
+
+.map_container {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+}
+
+.marke {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 25%;
+    height: 160rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon {
+    height: 40rpx;
+    width: 40rpx;
+}
+
+.hi {
+    display: none;
+}
+
+.wx-view_RDOSWY {
+    position: fixed;
+    bottom: 0;
+}
+
+.kong {
+    width: 100%;
+    height: 150rpx;
+}
+
+.rent-detail-price {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rent-detail-zhuanfa-box {
+    margin-right: 20rpx;
+    background: #fff;
+}
+
+.rent-detail-zhuanfa {
+    width: 155rpx;
+    height: 80rpx;
+    color: #DA3E3B;
+    border: 1px solid rgb(239,80,85);
+    line-height: 80rpx;
+    background: #fff;
+    font-size: 32rpx；;
+}
+
+.panorama {
+    position: fixed;
+    top: 550rpx;
+    right: 0;
+    width: 182rpx;
+    height: 100rpx;
+    z-index: 100;
+}
+
+.wx-view_RDOSWY {
+    padding-bottom: 0;
+}
+
+.home-img {
+    position: fixed;
+    bottom: 250rpx;
+    right: 40rpx;
+    width: 100rpx;
+    height: 100rpx;
+    z-index: 9999;
+}
