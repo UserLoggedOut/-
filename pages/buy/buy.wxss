@@ -1,0 +1,124 @@
+page {
+    background-color: rgba(255,255,255,1);
+}
+
+.bigBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    opacity: 1;
+}
+
+.wx-view_pOFBSt {
+    position: relative;
+}
+
+.stick {
+    width: 80rpx;
+    height: 80rpx;
+    position: absolute;
+    right: 0;
+}
+
+.quyu {
+    width: 100%;
+    height: auto;
+    background: white;
+    position: fixed;
+    z-index: 100;
+    display: block;
+}
+
+.buxian {
+    height: 40px;
+    width: 100%;
+    line-height: 80rpx;
+    color: #f35150;
+    text-indent: 30rpx;
+}
+
+.selected {
+    height: 80rpx;
+    width: 100%;
+    line-height: 80rpx;
+    border-top: 1px solid #f6f6f6;
+    text-indent: 30rpx;
+}
+
+.mianji {
+    height: 40rpx;
+    line-height: 50rpx;
+    width: 100%;
+    text-indent: 20rpx;
+    color: #9c9c9c;
+}
+
+.box {
+    height: auto;
+    width: 100%;
+    padding-left: 10rpx;
+}
+
+.daxiao {
+    width: 30%;
+    height: 60rpx;
+    border: 1px solid #f6f6f6;
+    float: left;
+    line-height: 60rpx;
+    text-align: center;
+    margin: 20rpx 20rpx 0 0;
+    border-radius: 2px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.buy-form {
+    width: 100%;
+}
+
+.search-box {
+    width: 100%;
+    height: 70rpx;
+    margin: 20rpx 0;
+}
+
+.search_v {
+    height: 100%;
+    width: 65%;
+    background: #ffffff;
+    border-radius: 10rpx 0 0 10rpx;
+    padding-left: 40rpx;
+    border: 1px solid #f5f5f5;
+}
+
+.search-img {
+    height: 50rpx;
+    width: 45%;
+}
+
+.search_b {
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    border-radius: 0 10rpx 10rpx 0;
+    background: #F3514F;
+}
+
+.no-data-img {
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 200rpx;
+    margin-bottom: 40rpx;
+}
+
+.no-data-font {
+    font-size: 32rpx;
+    color: #CDCDCD;
+}

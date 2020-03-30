@@ -1,0 +1,137 @@
+<view class="">
+    <view style="width:100%;height:auto;">
+        <view class="c-minheight wx-view_7lMfFL" data-c_e_id="wx_view_fb2bb95f">
+            <view catchtap="quyu" class="c-minheight wx-view_KWInZs" data-c_e_id="wx_view_e723f2e5">
+                <text class="c-block wx-text_ktAiUt" data-c_e_id="wx_text_3474a513">{{quyu}}</text>
+                <image class="wx-image_ZcU2wd" data-c_e_id="wx_image_e98e32be" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg); "></image>
+            </view>
+            <view catchtap="jiage" class="c-minheight wx-view_KWInZs" data-c_e_id="wx_view6ed3efd0">
+                <text class="c-block wx-text_ktAiUt" data-c_e_id="wx_text761b0074">{{jiage}}</text>
+                <image class="wx-image_ZcU2wd" data-c_e_id="wx_image82a7bbcc" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg); "></image>
+            </view>
+            <view catchtap="huxing" class="c-minheight wx-view_KWInZs" data-c_e_id="wx_view891a545c">
+                <text class="c-block wx-text_ktAiUt" data-c_e_id="wx_text53282486">{{huxing}}</text>
+                <image class="wx-image_ZcU2wd" data-c_e_id="wx_image7a806a20" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg); "></image>
+            </view>
+            <view catchtap="gengduo" class="c-minheight wx-view_KWInZs" data-c_e_id="wx_viewac4f75d1">
+                <text class="c-block wx-text_ktAiUt" data-c_e_id="wx_text39ee4bec">更多</text>
+                <image class="wx-image_ZcU2wd" data-c_e_id="wx_imagef0a4dc64" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/45409ba76be9953422e665925e550c9c_origin.jpg); "></image>
+            </view>
+        </view>
+        <view class="quyu" wx:if="{{value==1}}">
+            <view catchtap="aa1" class="buxian" data-xuanqu="不限">不限</view>
+            <scroll-view scrollY="true" style="height:auto;">
+                <view catchtap="aa1" class="selected" data-xuanqu="{{item.area}}" wx:for="{{area}}">{{item.area}}</view>
+            </scroll-view>
+        </view>
+        <view class="quyu" wx:if="{{value==2}}">
+            <view catchtap="aa2" class="buxian" data-jiage="0">不限</view>
+            <scroll-view scrollY="true" style="height:300px;">
+                <view catchtap="aa2" class="selected" data-jiage="1">50万以下</view>
+                <view catchtap="aa2" class="selected" data-jiage="2">50-80万</view>
+                <view catchtap="aa2" class="selected" data-jiage="3">80-100万</view>
+                <view catchtap="aa2" class="selected" data-jiage="4">100-200万</view>
+                <view catchtap="aa2" class="selected" data-jiage="5">200-300万</view>
+                <view catchtap="aa2" class="selected" data-jiage="6">300-400万</view>
+                <view catchtap="aa2" class="selected" data-jiage="7">400-500万</view>
+                <view catchtap="aa2" class="selected" data-jiage="8">500-600万</view>
+                <view catchtap="aa2" class="selected" data-jiage="9">600万以上</view>
+            </scroll-view>
+        </view>
+        <view class="quyu" wx:if="{{value==3}}">
+            <view catchtap="aa3" class="buxian" data-huxing="不限">不限</view>
+            <view>
+                <view catchtap="aa3" class="selected" data-huxing="一室">一室</view>
+                <view catchtap="aa3" class="selected" data-huxing="两室">两室</view>
+                <view catchtap="aa3" class="selected" data-huxing="三室">三室</view>
+                <view catchtap="aa3" class="selected" data-huxing="四室">四室</view>
+                <view catchtap="aa3" class="selected" data-huxing="五室">五室</view>
+                <view catchtap="aa3" class="selected" data-huxing="五室以上">五室以上</view>
+            </view>
+        </view>
+        <view class="quyu" wx:if="{{value==4}}">
+            <view class="mianji">面积</view>
+            <view class="box">
+                <view catchtap="aa4" class="daxiao first" data-mianji="不限" data-mianjicolor="1" style="color:{{mianjicolor==1?red:''}}">不限</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="0-50" data-mianjicolor="2" style="color:{{mianjicolor==2?red:''}}">0-50㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="50-70" data-mianjicolor="3" style="color:{{mianjicolor==3?red:''}}">50-70㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="70-90" data-mianjicolor="4" style="color:{{mianjicolor==4?red:''}}">70-90㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="90-110" data-mianjicolor="5" style="color:{{mianjicolor==5?red:''}}">90-110㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="110-130" data-mianjicolor="6" style="color:{{mianjicolor==6?red:''}}">110-130</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="130-150" data-mianjicolor="7" style="color:{{mianjicolor==7?red:''}}">130-150㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="150-200" data-mianjicolor="8" style="color:{{mianjicolor==8?red:''}}">150-200㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="200-300" data-mianjicolor="9" style="color:{{mianjicolor==9?red:''}}">200-300㎡</view>
+                <view catchtap="aa4" class="daxiao" data-mianji="300以上" data-mianjicolor="10" style="color:{{mianjicolor==10?red:''}}">300以上</view>
+            </view>
+            <view style="height:10px;width:100%;clear:both;"></view>
+            <view class="mianji">房屋类型</view>
+            <view class="box">
+                <view catchtap="aa5" class="daxiao first" data-guige="不限" data-leixingcolor="1" style="color:{{leixingcolor==1?red:''}}">不限</view>
+                <view catchtap="aa5" class="daxiao" data-guige="毛坯" data-leixingcolor="2" style="color:{{leixingcolor==2?red:''}}">毛坯</view>
+                <view catchtap="aa5" class="daxiao" data-guige="简装" data-leixingcolor="3" style="color:{{leixingcolor==3?red:''}}">简装</view>
+                <view catchtap="aa5" class="daxiao" data-guige="精装" data-leixingcolor="4" style="color:{{leixingcolor==4?red:''}}">精装</view>
+                <view class="daxiao" data-leixingcolor="5" style="border:0px"></view>
+                <view catchtap="aa5" class="daxiao" data-guige="豪装" data-leixingcolor="6" style="color:{{leixingcolor==6?red:''}}">豪装</view>
+                <view style="clear:both;height:20px;width:100%"></view>
+            </view>
+            <view class="mianji">房屋类别</view>
+            <view class="box">
+                <view catchtap="aa6" class="daxiao first" data-guige="不限" data-leibiecolor="1" style="color:{{leibiecolor==1?red:''}}">不限</view>
+                <view catchtap="aa6" class="daxiao" data-guige="住宅" data-leibiecolor="2" style="color:{{leibiecolor==2?red:''}}">住宅</view>
+                <view catchtap="aa6" class="daxiao" data-guige="别墅" data-leibiecolor="3" style="color:{{leibiecolor==3?red:''}}">别墅</view>
+                <view catchtap="aa6" class="daxiao" data-guige="商住" data-leibiecolor="4" style="color:{{leibiecolor==4?red:''}}">商住</view>
+                <view catchtap="aa6" class="daxiao" data-guige="商铺" data-leibiecolor="5" style="color:{{leibiecolor==5?red:''}}">商铺</view>
+                <view catchtap="aa6" class="daxiao" data-guige="写字楼" data-leibiecolor="6" style="color:{{leibiecolor==6?red:''}}">写字楼</view>
+                <view style="clear:both;height:20px;width:100%"></view>
+            </view>
+        </view>
+    </view>
+    <form bindsubmit="search_submit" class="buy-form">
+        <view class="search-box center">
+            <input class="search_v" name="search_value" placeholder="请输入房屋名或小区名" type="text" value="{{search_value}}"></input>
+            <button class="search_b center" formType="submit">
+                <image class="search-img" src="/resources/search.png"></image>
+            </button>
+        </view>
+    </form>
+    <view catchtap="bigBox" class="bigBox" wx:if="{{value>0}}"></view>
+    <view class="listitem01">
+        <view catchtap="tap_caac7aaf" class="c-minheight bottomGrayboder wx-view_pOFBSt" data-buy_id="{{item.id}}" wx:for="{{buys}}">
+            <image class="stick" src="/resources/zhidiang.png" wx:if="{{item.position==2}}"></image>
+            <navigator class="listitem-navigator" hoverClass="navigator-hover">
+                <view class="wx-image_tBcdCT2">
+                    <image class="img" mode="aspectFill" src="{{item.icon}}"></image>
+                </view>
+                <view class="wx-view_cPj0ok2">
+                    <view class="c-minheight wx-view_gmUz5O">
+                        <text class="c-block c-ellipse wx-text_TvHPc92">{{item.fang_name}}</text>
+                    </view>
+                    <view class="c-minheight wx-view_qSNbVJ">
+                        <text class="c-block wx-text_dFoG8W">{{item.district}}</text>
+                        <text class="c-block wx-text_BM3ABC">{{item.xiaoqu_name}}</text>
+                    </view>
+                    <view class="c-minheight wx-view_eSPd6T">
+                        <view class="c-minheight wx-view_ehjyjk">
+                            <text class="c-block wx-text_UdF2my">{{item.huxing}}</text>
+                            <text class="c-block wx-text_rg3ugt">{{item.size}}㎡</text>
+                        </view>
+                        <view class="c-minheight wx-view_8bRi3G" wx:if="{{item.total!=0}}">
+                            <text class="c-block wx-text_q7eeg3">{{item.total}}</text>
+                            <text class="c-block wx-text_HQhFyQ">万元</text>
+                        </view>
+                        <view class="c-minheight wx-view_8bRi3G" wx:if="{{item.total==0}}">
+                            <text class="c-block wx-text_q3eeg7">面议</text>
+                            <text class="c-block wx-text_HQhFyQ">万元</text>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <view class="columns" style="align-items: center">
+        <block wx:if="{{buys==''}}">
+            <image class="no-data-img" src="/resources/no-data.png"></image>
+            <view class="center no-data-font">暂无此类房屋信息</view>
+        </block>
+    </view>
+</view>
