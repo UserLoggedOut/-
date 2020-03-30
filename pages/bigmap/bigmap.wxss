@@ -1,0 +1,17 @@
+@import "../rentdetails/rentdetails.wxss";
+
+.map_container {
+    height: 86.5%;
+}
+
+.map {
+    height: 100%;
+}
+
+.marke {
+    height: 13.5%;
+}
+
+.box {
+    height: 100%;
+}

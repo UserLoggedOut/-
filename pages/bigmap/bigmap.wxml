@@ -1,0 +1,25 @@
+<view class="map_container">
+    <map bindmarkertap="makertap" class="map" id="map" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="14" showLocation="true"></map>
+</view>
+<view class="marke">
+    <view bindtap="marke" class="box" data-item="公交" style="color:{{address=='公交'?red:''}}">
+        <image class="icon" src="/resources/gongjiao.png"></image>
+        <text>公交</text>
+    </view>
+    <view bindtap="marke" class="box" data-item="地铁" style="color:{{address=='地铁'?red:''}}">
+        <image class="icon" src="/resources/ditie.png"></image>
+        <text>地铁</text>
+    </view>
+    <view bindtap="marke" class="box" data-item="学校" style="color:{{address=='学校'?red:''}}">
+        <image class="icon" src="/resources/xuexiao.png"></image>
+        <text>学校</text>
+    </view>
+    <view bindtap="marke" class="box" data-item="医院" style="color:{{address=='医院'?red:''}}">
+        <image class="icon" src="/resources/yiyuan.png"></image>
+        <text>医院</text>
+    </view>
+    <view bindtap="marke" class="box" data-item="银行" style="color:{{address=='银行'?red:''}}">
+        <image class="icon" src="/resources/yinhang.png"></image>
+        <text>银行</text>
+    </view>
+</view>
