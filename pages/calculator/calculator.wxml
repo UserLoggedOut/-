@@ -1,0 +1,97 @@
+<view class="full">
+    <view class="top-box column">
+        <view class="top-title rows box-radius">
+            <view bindtap="type" class="title center {{type==1?'active':''}}" data-type="1">等额本息</view>
+            <view bindtap="type" class="title center {{type==2?'active':''}}" data-type="2">等额本金</view>
+        </view>
+        <view class="top-small-box">
+            <view class="top-small-boxs columns">
+                <view>首付</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{shoufu}}&nbsp;</text>万</view>
+            </view>
+            <view class="top-small-boxs columns">
+                <view>{{type==1?'月供':'首月月供'}}</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{type==1?yuegonger:shouyuegonger}}&nbsp;</text>元</view>
+            </view>
+            <view class="top-small-boxs columns" wx:if="{{type==1}}">
+                <view>还款总额</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{zonger}}&nbsp;</text>万</view>
+            </view>
+            <view class="top-small-boxs columns" wx:if="{{type==1}}">
+                <view>利息总额</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{zonglixi}}&nbsp;</text>万</view>
+            </view>
+            <view class="top-small-boxs columns dengerbenjin" wx:if="{{type==2}}">
+                <view>还款总额</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{zonger}}&nbsp;</text>万</view>
+            </view>
+            <view class="top-small-boxs columns dengerbenjin" wx:if="{{type==2}}">
+                <view>利息总额</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{zonglixi}}&nbsp;</text>万</view>
+            </view>
+            <view class="top-small-boxs columns dengerbenjin" wx:if="{{type==2}}">
+                <view>每月递减</view>
+                <view>￥<text class="top-money" decode="true">&ensp;{{meiyuedijian}}&nbsp;{{200>=1000?'\n':''}}</text>元</view>
+            </view>
+        </view>
+    </view>
+    <view class="center-box">
+        <view class="center-top rows">
+            <icon class="icon" type="success"></icon>
+            <text class="gongjijindaikuan">公积金贷款</text>
+        </view>
+        <view class="center-small-box between">
+            <view class="center-box-title">房屋售价</view>
+            <view class="center-box-right rows">
+                <input class="input" disabled="true" type="text" value="{{money}}"></input>
+                <view class="img">
+            万元
+          </view>
+            </view>
+        </view>
+        <view class="center-small-box between">
+            <view class="center-box-title">首付比例</view>
+            <view class="center-box-right rows">
+                <picker bindchange="chengs" class="input" range="{{chengs}}" value="{{index}}">
+                    <input class="input" disabled="true" name="shoufubili" type="text" value="{{chengs[cheng]}}"></input>
+                </picker>
+                <view class="img">
+                    <image class="iocn-img" src="/resources/go.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="center-small-box between">
+            <view class="center-box-title">贷款总额</view>
+            <view class="center-box-right rows">
+                <input class="input" disabled="true" type="text" value="{{daikuan}}"></input>
+                <view class="img">
+            万元
+          </view>
+            </view>
+        </view>
+        <view class="center-small-box between">
+            <view class="center-box-title">贷款年限</view>
+            <view class="center-box-right rows">
+                <picker bindchange="selectYear" class="input" range="{{years}}" value="{{index}}">
+                    <input class="input" disabled="true" name="year" type="text" value="{{years[year]}}"></input>
+                </picker>
+                <view class="img">
+                    <image class="iocn-img" src="/resources/go.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="center-small-box between">
+            <view class="center-box-title benfenbi1">公积金利率(百分比%)</view>
+            <view class="center-box-right rows benfenbi2">
+                <input bindblur="rate" class="input" type="text" value="{{rate}}"></input>
+                <view class="img">
+              %
+          </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom-box columns">
+        <view bindtap="jisuan" class="btn center box-radius" hoverClass="fff">开始计算</view>
+        <view class="bottom-box-font">此结果仅供参考，实际费用以当地缴费为准</view>
+    </view>
+</view>
