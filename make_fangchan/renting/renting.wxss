@@ -1,0 +1,40 @@
+.bigBox {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background: #808080;
+    z-index: 99;
+    opacity: 0.7;
+}
+
+.box {
+    padding: 0 20rpx;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.xiala {
+    width: 100%;
+    display: block;
+    background: white;
+    border-radius: 10rpx;
+}
+
+.wx-view_k32Wuj {
+    min-height: 80rpx;
+    line-height: 80rpx;
+    color: #f35150;
+    border-bottom: 1px solid #f35150;
+}
+
+.wx-view_yoTpXX {
+    border-bottom: 1px solid #ececec;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+
+.wx-view_gBePH8 {
+    display: block;
+    height: auto;
+}
