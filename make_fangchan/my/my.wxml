@@ -1,0 +1,48 @@
+<view class="c-minheight wx-view_JbWxfk">
+    <view class="c-minheight carditem01">
+        <view class="wx-view_QvvUkU2">
+            <navigator class="wx-navigator_rv4BGW" hoverClass="navigator-hover">
+                <image class="wx-image_tBcdCT" mode="aspectFill" src="{{avatarUrl}}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/e08b7f406c49e68a972a05518afe2e9a_origin.jpg); "></image>
+                <view class="wx-view_cPj0ok">
+                    <text class="c-block wx-text_TvHPc9 my-left-name">{{nickName}}</text>
+                    <view class="c-minheight wx-view_HS2HOo my-right-img">
+                        <image catchtap="tap_bf5c5f95" class="wx-image_VrhnIu" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/edf1c17def26c61e7bcd511ba117f89a_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/edf1c17def26c61e7bcd511ba117f89a_origin.jpg); "></image>
+                        <image catchtap="tap_b37c5595" class="wx-image_FFuZm2" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/4dab9df274dcec42a20d2135452b134f_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/4dab9df274dcec42a20d2135452b134f_origin.jpg); "></image>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_lg1ra3">
+        <text class="c-block wx-text_JajAFs">常规操作</text>
+    </view>
+    <view class="c-minheight wx-view_dUUVMr">
+        <view catchtap="tap_16fb809a" class="c-minheight wx-view_tTRZAK">
+            <image class="wx-image_C0LYat" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/15fc8a805b4acf924b9f1b70fbe98dc9_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/15fc8a805b4acf924b9f1b70fbe98dc9_origin.jpg); "></image>
+            <text class="c-block wx-text_5BOrmq">我的收藏</text>
+        </view>
+        <view catchtap="tap_0004090a" class="c-minheight wx-view_nuhRSE">
+            <image class="wx-image_7mpHKd" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/15fc8a805b4acf924b9f1b70fbe98dc9_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/15fc8a805b4acf924b9f1b70fbe98dc9_origin.jpg); "></image>
+            <text class="c-block wx-text_5BOrmq">我的房源</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_6W7cZL">
+        <view catchtap="tap_af3cqf95" class="c-minheight wx-view_oSJXLY">
+            <image class="wx-image_TVygwm" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/ac58522f992c1e14777fc7dbf371d9b0_origin.jpg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/ac58522f992c1e14777fc7dbf371d9b0_origin.jpg); "></image>
+            <text class="c-block wx-text_Y1aCzP">授权设置</text>
+        </view>
+        <view catchtap="tap_bf5c5f95" class="c-minheight wx-view_mLEFOC">
+            <image class="wx-image_TVygwm" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/edf1c17def26c61e7bcd511ba117f89a_origin.jpg" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/edf1c17def26c61e7bcd511ba117f89a_origin.jpg); "></image>
+            <text class="c-block wx-text_Y1aCzP">清除缓存</text>
+        </view>
+        <button openType="contact">
+            <image class="kefu" src="/resources/kefu.png"></image>
+        </button>
+        <button bindgetuserinfo="bindGetUserInfo" openType="getUserInfo" wx:if="{{canIUse}}">授权登录</button>
+        <bolck wx:if="{{copyright!==''}}">
+            <view class="copyright">
+                <text class="ziti" space="nbsp">版权信息： {{copyright}}</text>
+            </view>
+        </bolck>
+    </view>
+</view>
