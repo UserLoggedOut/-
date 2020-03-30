@@ -1,0 +1,79 @@
+<view class="c-minheight wx-view_zuhCrg">
+    <view class="c-minheight wx-view_AU0N9a">
+        <view class="c-minheight wx-view_ycgnc6">
+            <image class="wx-image_GimRxz" mode="scaleToFill" src="{{agent.icon}}" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/786355627c47c6b6d57167a14d818b16_origin.jpg); "></image>
+            <text class="c-block wx-text_NUpsST">{{agent.agent_name}}</text>
+        </view>
+        <view class="c-minheight wx-view_JKAgPA">
+            <text class="c-block wx-text_UYApi7">{{agent.jianjei}}</text>
+        </view>
+        <view class="c-minheight wx-view_1bCxj3">
+            <view catchtap="tap_8606ebdd" class="c-minheight wx-view_eXvSDW">
+                <image class="wx-image_gDfu2n" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/e3b3fbea1c4050b78c34427c7aca9b22_origin.jpg" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/e3b3fbea1c4050b78c34427c7aca9b22_origin.jpg); "></image>
+            </view>
+            <view bindtap="call" class="c-minheight wx-view_eXvSDW" data-tel="{{agent.tel}}">
+                <image class="wx-image_gDfu2n" mode="scaleToFill" src="http://qty83k.creatby.com/materials/113959/origin/d00268bcda410633d4ac529ab5937712_origin.jpg" style="background-size:    100% 100%; background-position:    0% 0%; background-repeat:    no-repeat; background-image: url(http://qty83k.creatby.com/materials/113959/origin/d00268bcda410633d4ac529ab5937712_origin.jpg); "></image>
+            </view>
+        </view>
+    </view>
+    <block wx:for="{{rooms}}">
+        <view class="c-minheight wx-view_O2VXMR" wx:if="{{item.rental==0}}">
+            <view class="c-minheight bottomGrayboder wx-view_pOFBSt">
+                <navigator catchtap="tap_8f63d3aa" class="listitem-navigator" data-rent_id="{{item.id}}" hoverClass="navigator-hover">
+                    <image class="wx-image_tBcdCT2" mode="aspectFill" src="{{item.icon}}"></image>
+                    <view class="wx-view_cPj0ok2">
+                        <view class="c-minheight wx-view_gmUz5O">
+                            <text class="c-block c-ellipse wx-text_TvHPc92">{{item.fang_name}}-出租</text>
+                        </view>
+                        <view class="c-minheight wx-view_qSNbVJ">
+                            <text class="c-block wx-text_dFoG8W">{{item.fang_name}}</text>
+                            <text class="c-block wx-text_BM3ABC">{{item.district}}</text>
+                        </view>
+                        <view class="c-minheight wx-view_Kar8F7">
+                {{item.label_id}}
+              </view>
+                        <view class="c-minheight wx-view_eSPd6T">
+                            <view class="c-minheight wx-view_ehjyjk">
+                                <text class="c-block wx-text_UdF2my">{{item.huxing}}</text>
+                                <text class="c-block wx-text_rg3ugt">{{item.size}}㎡</text>
+                            </view>
+                            <view class="c-minheight wx-view_8bRi3G">
+                                <text class="c-block wx-text_q7eeg3">{{item.price}}</text>
+                                <text class="c-block wx-text_HQhFyQ">元/月</text>
+                            </view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_O2VXMR" wx:if="{{item.rental==1}}">
+            <view class="c-minheight bottomGrayboder wx-view_pOFBSt">
+                <navigator catchtap="tap_8f63d3ss" class="listitem-navigator" data-buy_id="{{item.id}}" hoverClass="navigator-hover">
+                    <image class="wx-image_tBcdCT2" mode="aspectFill" src="{{item.icon}}"></image>
+                    <view class="wx-view_cPj0ok2">
+                        <view class="c-minheight wx-view_gmUz5O">
+                            <text class="c-block c-ellipse wx-text_TvHPc92">{{item.fang_name}}-出售</text>
+                        </view>
+                        <view class="c-minheight wx-view_qSNbVJ">
+                            <text class="c-block wx-text_dFoG8W">{{item.fang_name}}</text>
+                            <text class="c-block wx-text_BM3ABC">{{item.district}}</text>
+                        </view>
+                        <view class="c-minheight wx-view_Kar8F7">
+                {{item.label_id}}
+              </view>
+                        <view class="c-minheight wx-view_eSPd6T">
+                            <view class="c-minheight wx-view_ehjyjk">
+                                <text class="c-block wx-text_UdF2my">{{item.huxing}}</text>
+                                <text class="c-block wx-text_rg3ugt">{{item.size}}㎡</text>
+                            </view>
+                            <view class="c-minheight wx-view_8bRi3G">
+                                <text class="c-block wx-text_q7eeg3">{{item.total}}</text>
+                                <text class="c-block wx-text_HQhFyQ">万元</text>
+                            </view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </block>
+</view>
