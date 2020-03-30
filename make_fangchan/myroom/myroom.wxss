@@ -1,0 +1,12 @@
+page {
+    background-color: rgba(212,212,212,0.8);
+}
+
+.active {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.as {
+    display: none;
+}

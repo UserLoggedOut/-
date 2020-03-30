@@ -1,0 +1,98 @@
+<view class="c-minheight wx-view_Yd06P2">
+    <view class="c-minheight wx-view_Fu5zom">
+        <view bindtap="active" class="c-minheight wx-view_DDhVi4 {{active?'active':''}}" data-id="0">
+            <text class="c-block wx-text_Mujjpo">出租</text>
+        </view>
+        <view bindtap="active" class="c-minheight wx-view_DDhVi4 {{active?'':'active'}}" data-id="1">
+            <text class="c-block wx-text_Mujjpo">出售</text>
+        </view>
+    </view>
+    <block wx:for="{{rents}}">
+        <view class="c-minheight wx-view_xabp33 {{active?'':'as'}}" wx:if="{{item.rental==0}}">
+            <view class="c-minheight wx-view_KELOwB">
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">区域</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.district}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">装修</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.leixing}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">用途</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.leibie}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">户型</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.huxing}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">联系电话</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.tel}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">登记时间</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.create_time}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">状态</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==0}}">上架</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==1}}">下架</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==2}}">待审核</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==3}}">已撤销</text>
+                </view>
+                <view bindtap="revoke" class="c-minheight wx-view_GlwRXM" data-fang_id="{{item.id}}" wx:if="{{item.frame==2}}">
+                    <text class="c-block wx-text_KR81nX">撤销该信息</text>
+                </view>
+                <block wx:if="{{item.frame!=1}}">
+                    <view bindtap="del" class="c-minheight wx-view_GlwRXM" data-fang_id="{{item.id}}" wx:if="{{item.frame!=2}}">
+                        <text class="c-block wx-text_KR81nX">下架</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_xabp33 {{active?'as':''}}" wx:if="{{item.rental==1}}">
+            <view class="c-minheight wx-view_KELOwB">
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">区域</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.district}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">装修</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.leixing}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">用途</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.leibie}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">户型</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.leibie}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">联系电话</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.tel}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">登记时间</text>
+                    <text class="c-block wx-text_t4s1NI">{{item.create_time}}</text>
+                </view>
+                <view class="c-minheight wx-view_xbFedS">
+                    <text class="c-block wx-text_Fncg9Y">状态</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==0}}">上架</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==1}}">下架</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==2}}">待审核</text>
+                    <text class="c-block wx-text_t4s1NI" wx:if="{{item.frame==3}}">已撤销</text>
+                </view>
+                <view bindtap="revokes" class="c-minheight wx-view_GlwRXM" data-fang_id="{{item.id}}" wx:if="{{item.frame==2}}">
+                    <text class="c-block wx-text_KR81nX">撤销该信息</text>
+                </view>
+                <block wx:if="{{item.frame!=1}}">
+                    <view bindtap="dels" class="c-minheight wx-view_GlwRXM" data-fang_id="{{item.id}}" wx:if="{{item.frame!=2}}">
+                        <text class="c-block wx-text_KR81nX">下架</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>
