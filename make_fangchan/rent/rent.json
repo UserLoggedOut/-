@@ -1,0 +1,6 @@
+{
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "租房",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+}
