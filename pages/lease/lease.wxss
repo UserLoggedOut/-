@@ -1,0 +1,145 @@
+.bigBox {
+    width: 100%;
+    height: 150%;
+    position: fixed;
+    background: #808080;
+    z-index: 99;
+    opacity: 0.7;
+}
+
+.box {
+    padding: 0 20rpx;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.xiala {
+    width: 100%;
+    display: block;
+    background: white;
+    border-radius: 10rpx;
+}
+
+.wx-view_k32Wuj {
+    min-height: 80rpx;
+    line-height: 80rpx;
+    color: #f35150;
+    border-bottom: 1px solid #f35150;
+}
+
+.wx-view_yoTpXX {
+    border-bottom: 1px solid #ececec;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+
+.wx-view_gBePH8 {
+    display: block;
+    height: auto;
+}
+
+#imgs_box {
+    height: auto;
+    width: 100%;
+}
+
+.add_photo image {
+    width: 50%;
+    height: 160rpx;
+}
+
+.view_img {
+    margin: 2.25%;
+    height: 160rpx;
+    width: 27%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f2f3f6;
+    color: #44474c;
+}
+
+.imgs {
+    height: 160rpx;
+    width: 100%;
+}
+
+.del_img {
+    height: 60rpx;
+    width: 27%;
+    opacity: 0.7;
+    background: gray;
+    position: absolute;
+    margin-top: 50rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+
+#del_video {
+    position: absolute;
+    right: -38rpx;
+    top: -40rpx;
+    heigt: 88rpx;
+    width: 36rpx;
+    text-align: center;
+    position: absolute;
+    height: 44rpx;
+}
+
+.switch {
+    padding-right: 40rpx;
+}
+
+.iocn-img {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 24rpx;
+    margin-right: 30rpx;
+}
+
+.center-small-box {
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.between {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img {
+    width: 30%;
+    height: 90rpx;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.center-box-title {
+    width: 30%;
+    height: 90rpx;
+    padding-left: 30rpx;
+}
+
+.cos {
+    color: #fa1c05;
+    width: 160rpx;
+}
+
+.input {
+    width: 100%;
+    height: 90rpx;
+    text-align: right;
+}

@@ -1,0 +1,339 @@
+<view bindtap="bigBox" class="bigBox" wx:if="{{value>0}}"></view>
+<view class="c-minheight wx-view_z3dYZR">
+    <view class="c-minheight wx-view_Q1CWRl">
+    基本信息
+  </view>
+    <form bindsubmit="formSubmit">
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">区域</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="1" disabled="True" name="district" placeholder="请选择区域" type="text" value="{{xuanqu}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="c-minheight wx-view_5kqjEP">
+            <view class="c-minheight wx-view_jeORdp"></view>
+        </view>
+        <view class="box" wx:if="{{value==1}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          选择区域
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto; height: 380px;" upperThreshold="50">
+                    <view bindtap="xuanqu" class="c-minheight wx-view_yoTpXX" data-xuanqu="{{item.area}}" wx:for="{{area}}">{{item.area}}</view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY" style="z-index:100">
+            <text class="c-block wx-text_8uXEnB">小区</text>
+            <input bindinput="searchAddress" class="c-block c-fullwidth wx-input_1ziKdK" name="xiaoqu" placeholder="选择的小区才能放入地图找房" type="text" value="{{xiaoqu_name}}"></input>
+        </view>
+        <view class="c-minheight wx-view_5kqjEP">
+            <view class="c-minheight wx-view_jeORdp"></view>
+        </view>
+        <view class="box" wx:if="{{values==9}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto; height:auto;background:#f5f5f5;" upperThreshold="50">
+                    <view bindtap="xiaoqu" class="c-minheight wx-view_yoTpXX" data-xiaoqu="{{index}}" wx:for="{{address}}" wx:key="address">{{item.title}}</view>
+                    <view bindtap="xiaoqu_close" class="c-minheight wx-view_yoTpXX center">关闭</view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">装修</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="2" disabled="True" name="leixing" placeholder="请选择装修情况" type="text" value="{{zhuangxiu}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="box" wx:if="{{value==2}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          装修
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto;" upperThreshold="50">
+                    <view bindtap="zhuangxiu" class="c-minheight wx-view_yoTpXX" data-zhuangxiu="毛坯">
+            毛坯
+          </view>
+                    <view bindtap="zhuangxiu" class="c-minheight wx-view_yoTpXX" data-zhuangxiu="简装">
+            简装
+          </view>
+                    <view bindtap="zhuangxiu" class="c-minheight wx-view_yoTpXX" data-zhuangxiu="精装">
+            精装
+          </view>
+                    <view bindtap="zhuangxiu" class="c-minheight wx-view_yoTpXX" data-zhuangxiu="豪装">
+            豪装
+          </view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_5kqjEP">
+            <view class="c-minheight wx-view_jeORdp"></view>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">用途</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="3" disabled="True" name="leibie" placeholder="请选择用途" type="text" value="{{yongtu}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="box" wx:if="{{value==3}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          用途
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto;" upperThreshold="50">
+                    <view bindtap="yongtu" class="c-minheight wx-view_yoTpXX" data-yongtu="住宅">
+            住宅
+          </view>
+                    <view bindtap="yongtu" class="c-minheight wx-view_yoTpXX" data-yongtu="别墅">
+            别墅
+          </view>
+                    <view bindtap="yongtu" class="c-minheight wx-view_yoTpXX" data-yongtu="写字楼">
+            写字楼
+          </view>
+                    <view bindtap="yongtu" class="c-minheight wx-view_yoTpXX" data-yongtu="商铺">
+            商铺
+          </view>
+                    <view bindtap="yongtu" class="c-minheight wx-view_yoTpXX" data-yongtu="厂房">
+            厂房
+          </view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_5kqjEP">
+            <view class="c-minheight wx-view_jeORdp"></view>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">标签</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="7" disabled="True" name="label_id" placeholder="请选择标签" type="text" value="{{label}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="box" wx:if="{{value==7}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          选择标签
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto; height: 380px;" upperThreshold="50">
+                    <view bindtap="label" class="c-minheight wx-view_yoTpXX" data-label="{{item.label_name}}" data-label_id="{{item.id}}" wx:for="{{labels}}">{{item.label_name}}</view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_J9KdCr">
+      出租信息
+    </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">屋名</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="fang_name" placeholder="请输入房屋名称 包含小区名" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">租金</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="price" placeholder="请输入租金元/月" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">厅</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="5" disabled="True" name="office" placeholder="请选择厅" type="text" value="{{office}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="box" wx:if="{{value==5}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          厅
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto;" upperThreshold="50">
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="无">
+            无
+          </view>
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="一厅">
+            一厅
+          </view>
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="两厅">
+            两厅
+          </view>
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="三厅">
+            三厅
+          </view>
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="四厅">
+            四厅
+          </view>
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="五厅">
+            五厅
+          </view>
+                    <view bindtap="office" class="c-minheight wx-view_yoTpXX" data-office="五厅以上">
+            五厅以上
+          </view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="box" wx:if="{{value==4}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          户型
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto;" upperThreshold="50">
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="无">
+            无
+          </view>
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="一室">
+            一室
+          </view>
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="两室">
+            两室
+          </view>
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="三室">
+            三室
+          </view>
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="四室">
+            四室
+          </view>
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="五室">
+            五室
+          </view>
+                    <view bindtap="huxing" class="c-minheight wx-view_yoTpXX" data-huxing="五室以上">
+            五室以上
+          </view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="box" wx:if="{{value==6}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          卫
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto;" upperThreshold="50">
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="无">
+            无
+          </view>
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="一卫">
+            一卫
+          </view>
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="两卫">
+            两卫
+          </view>
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="三卫">
+            三卫
+          </view>
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="四卫">
+            四卫
+          </view>
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="五卫">
+            五卫
+          </view>
+                    <view bindtap="guard" class="c-minheight wx-view_yoTpXX" data-guard="五卫以上">
+            五卫以上
+          </view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="box" wx:if="{{value==8}}">
+            <view class="c-minheight wx-view_XierZj xiala">
+                <view class="c-minheight wx-view_k32Wuj">
+          选择经纪人
+        </view>
+                <scroll-view class="c-minheight wx-scroll-view_jB15gH" lowerThreshold="50" scrollY="True" style="overflow-x: hidden; overflow-y: auto; height: 380px;" upperThreshold="50">
+                    <view bindtap="agent" class="c-minheight wx-view_yoTpXX" data-agentId="{{item.id}}" data-xuanqu="{{item.agent_name}}" wx:for="{{agents}}">{{item.agent_name}}</view>
+                </scroll-view>
+            </view>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">户型</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="4" disabled="True" name="huxing" placeholder="请选择户型" type="text" value="{{huxing}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">卫</text>
+            <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="6" disabled="True" name="guard" placeholder="请选择卫" type="text" value="{{guard}}"></input>
+            <text class="c-block wx-text_HHMc1k">❯</text>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">押金类型</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="type" placeholder="例如：押一付一" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">年代</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="years" placeholder="如：2016" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">面积</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="size" placeholder="请输入面积/㎡" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">楼层</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="floor" placeholder="格式：中楼层/20层" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_Lt6SVY">
+            <text class="c-block wx-text_8uXEnB">电话</text>
+            <input class="c-block c-fullwidth wx-input_1ziKdK" name="tel" placeholder="房东电话" type="text"></input>
+        </view>
+        <view class="c-minheight wx-view_J6KdCr"></view>
+        <view class="c-minheight">
+            <view class="c-minheight wx-view_Lt6SYV">
+                <text class="c-block wx-text_8uEXnB">全景图开关</text>
+                <view class="body-view switch">
+                    <switch bindchange="switch_panorama"></switch>
+                </view>
+            </view>
+            <block wx:if="{{switch_panorama==1}}">
+                <view class="c-minheight wx-view_5kqjEP">
+                    <view class="c-minheight wx-view_jeORdp"></view>
+                </view>
+                <view class="c-minheight wx-view_Lt6SVY">
+                    <text class="c-block wx-text_8uEXnB">全景图地址</text>
+                    <input class="c-block c-fullwidth wx-input_1ziKdK" name="panorama" placeholder="htpps://开头" type="text"></input>
+                </view>
+            </block>
+        </view>
+        <view class="c-minheight wx-view_J6KdCr"></view>
+        <view class="c-minheight">
+            <view class="c-minheight wx-view_Lt6SYV">
+                <text class="c-block wx-text_8uEXnB">经纪人发布</text>
+                <view class="body-view switch">
+                    <switch bindchange="switch2Change"></switch>
+                </view>
+            </view>
+            <block wx:if="{{agent}}">
+                <view class="c-minheight wx-view_Lt6SVY">
+                    <text class="c-block wx-text_8uXEnB">经纪人</text>
+                    <input bindtap="quyu" class="c-block c-fullwidth wx-input_1ziKdK" data-selects="8" disabled="True" name="agent_name" placeholder="请选择经纪人" type="text" value="{{agent_name}}"></input>
+                    <text class="c-block wx-text_HHMc1k">❯</text>
+                </view>
+                <view class="c-minheight wx-view_5kqjEP">
+                    <view class="c-minheight wx-view_jeORdp"></view>
+                </view>
+                <view class="c-minheight wx-view_Lt6SVY">
+                    <text class="c-block wx-text_8uXEnB">发布密码</text>
+                    <input class="c-block c-fullwidth wx-input_1ziKdK" name="release" placeholder="发布密码" type="text"></input>
+                </view>
+            </block>
+        </view>
+        <view class="c-minheight wx-view_J9KdCr">
+      其他描述
+    </view>
+        <view class="c-minheight wx-view_tEudmq">
+            <textarea class="c-block c-fullwidth wx-textarea_uI4aGO" name="describe" placeholder="请输入装修配套等体现房屋亮点的简单描述"></textarea>
+        </view>
+        <view class="c-minheight wx-view_gBePH8" id="imgs_box">
+            <view bindtap="imgTap" class="add_photo view_img">
+                <image src="/resources/photo1.png"></image>
+                <text>添加照片</text>
+            </view>
+            <block wx:if="{{first==1}}">
+                <view bindtap="videoTap" class="add_photo view_img">
+                    <image src="/resources/luxiang1.png"></image>
+                    <text>添加视频</text>
+                </view>
+                <view class="view_img" style="position:relative;" wx:if="{{video}}">
+                    <image bindtap="del_video" id="del_video" src="/resources/close.png"></image>
+                    <video class="imgs" src="{{video}}"></video>
+                </view>
+            </block>
+            <view class="view_img" wx:for="{{imgs}}" wx:key="navItems">
+                <view bindtap="del_img" class="del_img" id="{{index}}">删除</view>
+                <image bindtap="preImg" class="imgs" data-img="{{item}}" data-imgs="{{item}}" src="{{item}}"></image>
+            </view>
+        </view>
+        <view style="clear: both;"></view>
+        <input hidden="true" name="imgs" type="text" value="{{imgs}}"></input>
+        <input hidden="true" name="video" type="text" value="{{video}}"></input>
+        <button class="c-minheight wx-view_pVJYgh" formType="submit" wx:if="{{!waite}}">
+      提交
+    </button>
+        <button class="c-minheight wx-view_pVJYgh" loading="true" wx:else>
+      提交
+    </button>
+    </form>
+</view>
