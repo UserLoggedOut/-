@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "make_fangchan/index/index",
+    "make_fangchan/buy/buy",
+    "make_fangchan/lease/lease",
+    "make_fangchan/sell/sell",
+    "make_fangchan/buydetails/buydetails",
+    "make_fangchan/searchhome/searchhome",
+    "make_fangchan/rent/rent",
+    "make_fangchan/rentdetails/rentdetails",
+    "make_fangchan/bigmap/bigmap",
+    "make_fangchan/calculator/calculator",
+    "make_fangchan/my/my",
+    "make_fangchan/roomlist/roomlist",
+    "make_fangchan/jinglist/jinglist",
+    "make_fangchan/collection/collection",
+    "make_fangchan/myroom/myroom",
+    "make_fangchan/renting/renting",
+    "make_fangchan/seekbuy/seekbuy",
+    "make_fangchan/zugou/zugou",
+    "make_fangchan/panorama/panorama"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#fa1c05",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#989898",
+    "selectedColor": "#e52324",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "make_fangchan/index/index",
+        "iconPath": "resources/040cdca9046f0bd19206c22f1e8fa90a.jpg",
+        "selectedIconPath": "resources/236aa849bc9e1a60f7775c8f86079af7.jpg"
+      },
+      {
+        "text": "租房",
+        "pagePath": "make_fangchan/rent/rent",
+        "iconPath": "resources/da591ec1e492c49e4b2fe4f701ca0562.jpg",
+        "selectedIconPath": "resources/9cf40c8f5e5e0f5d164578e3d5324ea5.jpg"
+      },
+      {
+        "text": "买房",
+        "pagePath": "make_fangchan/buy/buy",
+        "iconPath": "resources/df84ed2a171c306d3e36af19d2c01c0f.jpg",
+        "selectedIconPath": "resources/443d20def1a45a870c81ba6287c54ba0.jpg"
+      },
+      {
+        "text": "我的",
+        "pagePath": "make_fangchan/my/my",
+        "iconPath": "resources/ea3d87bf0c3e7a173d4f57c0cb8a3b02.jpg",
+        "selectedIconPath": "resources/079f577b1754f67716efda27d450108c.jpg"
+      }
+    ],
+    "backgroundColor": "#F7F7FA"
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}
