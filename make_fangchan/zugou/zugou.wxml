@@ -1,0 +1,20 @@
+<view class="es" style="background-image:url('{{bjt}}');" wx:if="{{bjt!=''}}">
+    <view class="c-minheight wx-view_uPA9Dl">
+        <button catchtap="tap_84a1f83d" class="wx-button_ZkqJUn" hoverClass="button-hover" size="default" type="default">
+        求租登记
+      </button>
+        <button catchtap="tap_a7fc3294" class="wx-button_AsFJWQ" hoverClass="button-hover" size="default" type="default">
+        求购登记
+      </button>
+    </view>
+</view>
+<view class="es" style="background-image:url('{{jtbjt}}');" wx:if="{{bjt==''}}">
+    <view class="c-minheight wx-view_uPA9Dl">
+        <button catchtap="tap_84a1f83d" class="wx-button_ZkqJUn" hoverClass="button-hover" size="default" type="default">
+        求租登记
+      </button>
+        <button catchtap="tap_a7fc3294" class="wx-button_AsFJWQ" hoverClass="button-hover" size="default" type="default">
+        求购登记
+      </button>
+    </view>
+</view>
